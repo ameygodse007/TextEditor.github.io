@@ -10,6 +10,24 @@
  * Update the output text as a user types in the textarea
  * HINT: Use the onkeydown function inside HTML
  */
+
+const options={
+  bottom: '64px', // default: '32px'
+  right: '32px', // default: '32px'
+  left: 'unset', // default: 'unset'
+  time: '0.5s', // default: '0.3s'
+  mixColor: '#fff', // default: '#fff'
+  backgroundColor: '#333333',  // default: '#fff'
+  buttonColorDark: '#100f2c',  // default: '#100f2c'
+  buttonColorLight: '#fff', // default: '#fff'
+  saveInCookies: false, // default: true,
+  label: '🌓', // default: ''
+  autoMatchOsTheme: true //
+}
+
+const darkmode = new Darkmode(options);
+darkmode.showWidget();
+
 function updateText(){
   // CODE GOES HERE
   let text = document.getElementById('text-input').value;
