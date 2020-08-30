@@ -13,6 +13,8 @@
 .editor .col {
   max-width: 50%;
   flex-basis: 50%;
+  font-size:25px;
+  color: #00bcd4;
 }
 
 .bold {
